@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Pracownicy</h1>
+  </div>
+
+    <h1>{{ user.username }} - właściciel sklepu</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} - stanowisko - <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+
+  
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>Dostępne czujniki:</h1>
+  </div>
+  <h1>
+<table>
+<tr>
+	<td>..Id.:</td>	<td>Nazwa</td> <td>Cena w koronach </td> <td> ..Ilość w magazynie </td> <td> Link do czujnika </td>
+</tr>
+<tr>
+	<td> {{session.id}}</td>	<td>{{session.nazwa}} </td> <td>{{session.cena}}</td> <td> {{session.ilosc}} </td> <td> <li><a href="/cz_turb">Click</a></li> </td>
+</tr>
+<tr>
+	<td> {{session.id2}}</td>	<td>{{session.nazwa2}} </td> <td>{{session.cena2}}</td> <td> {{session.ilosc2}} </td> <td> <li><a href="/cz_temp">Click</a></li> </td>
+</tr>
+<tr>
+	<td> {{session.id3}}</td>	<td>{{session.nazwa3}} </td> <td>{{session.cena3}}</td> <td> {{session.ilosc3}} </td> <td> <li><a href="/cz_wilg">Click</a></li> </td>
+</tr>
+<tr>
+	<td> {{session.id4}}</td>	<td>{{session.nazwa4}} </td> <td>{{session.cena4}}</td> <td> {{session.ilosc4}} </td> <td> <li><a href="/cz_zyr">Click</a></li> </td>
+</tr>
+</table>
+</h1>
+
+
+{% endblock %}
